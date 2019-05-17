@@ -1,0 +1,990 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Click Source</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"  crossorigin="anonymous">-->
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+<link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/all.css"  crossorigin="anonymous">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="navbar navbar-expand-sm fixed-top">
+  <div class="bigscr">
+    <button class="navbar-toggler navbar-toggler-right cta" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="toggle-btn type14"></div>
+    </button>
+    <div class="hamburger">
+      <div class="cta">
+        <div class="toggle-btn type14"></div>
+      </div>
+    </div>
+    <div class="navbar-brand"> <a class="" href="index.html"> <img src="images/logo.svg" alt="Click Source"> </a> </div>
+    <!-- Brand/logo -->
+    
+    <div class="collapse navbar-collapse flex-row-reverse rgtmenu" id="navbarNavDropdown"> <a class="navbar-brand d-none" href="#"> <img src="images/logo.svg" alt="Click Source"> </a>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown messages-menu" > <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="images/noun-Communication-619306-000000-2.svg" alt="Notification" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Request Call Back" /> 
+          <!--<span class="label label-success bg-success">10</span>--> 
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="messageblock" >
+              <p>Message ClikSource support </br/>to get a call back</p>
+              <form>
+                <textarea>Your Comment</textarea>
+                <div class="btn-group" > <a href="#" data-toggle="dropdown">Cancel </a> <a href="#" class="orgtxt" >Send Request</a> </div>
+              </form>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item notifications-menu"> <a class="nav-link notifications-bell" href="#"> <img src="images/ic-notification.svg" alt="Notification"  data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Notifications" /> <span class="label label-warning bg-danger">10</span> </a> </li>
+        <li class="nav-item dropdown  user-menu"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="images/oval-3@3x.jpg" width="30" alt="User Name"   data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="User Profile" /> </a>
+          <div class="dropdown-menu dropdown-menu-xl" aria-labelledby="navbarDropdownMenuLink">
+            <div class="kt-user-card kt-user-card--skin-dark kt-notification-item-padding-x" >
+              <div class="kt-user-card__avatar"> <img class="kt-hidden" alt="Pic" src="images/oval-3@3x.jpg"> </div>
+              <div class="kt-user-card__name"> Sean Stone <span>Hiring Manager</span> <a href="profile.html" class="btn btn-label-brand btn-sm btn-bold">View Profile</a> </div>
+            </div>
+            <div class="kt-notification"> <a href="#" class="kt-notification__item">
+              <div class="kt-notification__item-icon"> <img src="images/Combined-Shape-2.svg" alt="Account Setting" > </div>
+              <div class="kt-notification__item-details">
+                <div class="kt-notification__item-time"> Account settings </div>
+              </div>
+              </a> <a href="login.html" class="kt-notification__item">
+              <div class="kt-notification__item-icon"> <img src="images/noun-power-button-174953-000000.svg" alt="Sign out" > </div>
+              <div class="kt-notification__item-details">
+                <div class="kt-notification__item-time"> Sign Out </div>
+              </div>
+              </a> </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="notification-block">
+  <div class="notification-title"> <a class="#">CLEAR ALL</a> <span class="notification-close pull-right"> <i class="fal fa-times"></i> </span> </div>
+  <div class="notification-items">
+    <ul>
+      <li>
+        <div class="notification-items-top"> <i class="fa fa-bell"></i> <span class="available">Candidate is available for REC No. 123456</span> </div>
+        <div class="notification-items-bottom"> Job Detail : <span>Java Programmer, 3 Yrs Exp.</span> </div>
+      </li>
+      <li>
+        <div class="notification-items-top"> <i class="fa fa-bell"></i> <span class="unavailable">Candidate is not available for REC No. 123456</span> </div>
+        <div class="notification-items-bottom"> Job Detail : <span>Java Programmer, 3 Yrs Exp.</span> </div>
+      </li>
+      <li>
+        <div class="notification-items-top"> <i class="fa fa-bell"></i> <span class="unavailable">Candidate is not available for REC No. 123456</span> </div>
+        <div class="notification-items-bottom"> Job Detail : <span>Java Programmer, 3 Yrs Exp.</span> </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<section class="side-bar-warp">
+  <div class="sidebar-menu small-side-bar">
+    <nav class="">
+      <ul class="navbar-nav">
+        <li class="nav-item user"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-user-profile.svg" alt=""></span><span class="fadeInRight animated nav-link-name tax-show">John Doe</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-leftmenu-home-default.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">Home</span> </a> </li>
+        <li class="nav-item dropdown-header"> <span class="fadeInRight animated nav-link-name tax-show">SEARCH</span> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-searchbyskills-selected.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">Skills</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-leftmenu-searchbyjobdescription-default.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">Job Description</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-searchbyresume-default.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">Resume</span> </a> </li>
+        <li class="nav-item  dropdown-header"> <a class="nav-link" href="#"> <span class="fadeInRight animated nav-link-name tax-show">MANAGE</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-leftmenu-my-calendar-default.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">My Calendar</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-leftmenu-my-requirements-default.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">My Requirements</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-leftmenu-my-hires-default.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">My Hires</span> </a> </li>
+        <li class="nav-item dropdown-header"> <span class="fadeInRight animated nav-link-name tax-show">ACCOUNT</span> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-leftmenu-callrequest-default.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">Contact Support</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-leftmenu-notification-default.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">Notification</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-leftmenu-importantlinks-default.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">Important Links</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-leftmenu-rateyourapp-default.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">Rate Your App</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-drawermenu-aboutus.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">About Us</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <span class="sidebar-icon"><img src="images/ic-leftmenu-logout-default.svg" alt=""></span> <span class="fadeInRight animated nav-link-name tax-show">Log Out</span> </a> </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<div class="bgfix"></div>
+<div class="container-fluid new-requisition">
+  <div class="title-bar">Create Requisition</div>
+  <div class="new-requisition-box">
+    <div class="row row-wth-mrg">
+      <div class="col-md-9">
+        <div class="requisition-box-right">
+          <div class="sub-title">Job Details</div>
+          <div class="">
+            <div class="row row-wth-mrg">
+              <div class="col-md-6">
+                <div class="input-field location">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Job Title</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <form class="input-field location" id="card-skill">
+                  <input id="form-tags-skill" name="tags-1" type="text" value="Core java,J2EE,SQL Advance" >
+                  <label for="last_name">Skill</label>
+                </form>
+              </div>
+            </div>
+            <div class="row row-wth-mrg">
+              <div class="col-md-6">
+                <div class="input-field location">
+                  <input id="location" type="text" class="validate">
+                  <label for="location">Location</label>
+                  <i class="fa fa-location-arrow "></i> </div>
+              </div>
+              <div class="col-md-3">
+                <select class="js-select2">
+                  <option value="" disabled selected>Min Exp.</option>
+                  <option value="1">5 Yrs</option>
+                  <option value="2">10 Yrs</option>
+                  <option value="3">15 Yrs</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <select class="js-select2">
+                  <option value="" disabled selected>Max Exp.</option>
+                  <option value="1">5 Yrs</option>
+                  <option value="2">10 Yrs</option>
+                  <option value="3">15 Yrs</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="sub-title mrg-top-10">Additional Information</div>
+          <div class="row row-wth-mrg">
+            <div class="col-md-6">
+              <div class="input-field location">
+                <input id="domain" type="text" class="validate">
+                <label for="domain">* Domain</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-field location">
+                <input id="Duration" type="text" class="validate">
+                <label for="Duration">* Duration</label>
+                <span class="right-tag">Months</span> </div>
+            </div>
+          </div>
+          <div class="row row-wth-mrg">
+            <div class="col-md-6">
+              <label class="d-block custom-label mrg-top-10">* Employment Type</label>
+              <div class="form-check-inline employment-type">
+                <label>
+                  <input class="with-gap" name="group1" type="radio" />
+                  <span>Full Time</span> </label>
+                <label class="mar-lft-15">
+                  <input class="with-gap" name="group1" type="radio" checked />
+                  <span>Contract</span> </label>
+              </div>
+              <label class="d-block custom-label mrg-top-10 mrg-btm-0">* Bill Rate</label>
+              <div class="row row-wth-mrg">
+                <div class="col-md-6">
+                  <div class="input-field location mar-top-zero">
+                    <input id="billrateMin" type="text" class="validate" style="padding-left: 30px; width: 85%;">
+                    <span class="right-tag">($/hr)</span> <span class="left-tag">Min.</span> </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-field location mar-top-zero">
+                    <input id="billrateMax" type="text" class="validate" style="padding-left: 30px; width: 85%;">
+                    <span class="right-tag">($/hr)</span> <span class="left-tag">Max.</span> </div>
+                </div>
+              </div>
+              <div class="input-field location mrg-top-10">
+                <input type="text" class="datepicker">
+                <label for="positions">* Start Date</label>
+                <i class="fas fa-calendar-alt"></i> </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-field location mar-top-zero">
+                <input id="positions" type="text" class="validate">
+                <label for="positions">* No. of positions</label>
+              </div>
+              <div class="input-field"> 
+                <!-- Modal Trigger --> 
+                <span class="waves-effect waves-light modal-trigger" data-toggle="modal" data-target="#JobDescription" ><i class="fa fa-expand-alt"></i></span> 
+                
+                <!-- Modal Structure -->
+                <div class="modal fade" id="JobDescription" role="dialog">
+                  <div class="modal-dialog modal-lg"> 
+                    
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Job Description</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p class="text-center" style="min-height: 400px;">No Job Description</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1" class="txtarealbl">Job Description</label>
+                <fieldset class="form-group desk">
+                  <a href="javascript:void(0)" onclick="$('#pro-image').click()">Upload &nbsp; <img src="images/Shape.svg" class="	upimg" alt="Upload" /> </a>
+                  <input type="file" id="pro-image" name="pro-image" style="display: none;" class="form-control" multiple>
+                </fieldset>
+                <fieldset class="form-group ipad">
+                  <a href="javascript:void(0)" onclick="$('#pro-image').click()">Upload &nbsp; <img src="images/Shape.svg" class="	upimg" alt="Upload" /> </a> <a href="javascript:void(0)" onclick="" class="capblock">Capture &nbsp; <img src="images/capture resume or jd.svg" class="capimg" alt="Capture" /> </a>
+                  <input type="file" id="pro-image" name="pro-image" style="display: none;" class="form-control" multiple>
+                </fieldset>
+                <ul class="filename">
+                  <li> <a href="#">File_Name.pdf</a></li>
+                </ul>
+                <div class="pull-right search ipadbtn"> <a href="#" class="btn btn-next btn-fill btn-danger btn-wd"> Search &nbsp;&nbsp;<i class="fa fa-search"></i></a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="requisition-box-left">
+          <div class="sub-title">Job Profile Videos <span>(Optional)</span></div>
+          <div class="video-profile">
+            <div class="video-box-in">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="12" cy="12" r="12" fill="#FFF"/>
+                  <path fill="#5050E2" d="M9 17.215V7.5l8.217 4.857z"/>
+                </g>
+              </svg>
+              <div class="video-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#D0021B" d="M19.848 10.076c0 5.481-4.443 9.924-9.924 9.924C4.444 20 0 15.557 0 10.076 0 4.596 4.443.152 9.924.152c5.48 0 9.924 4.443 9.924 9.924"/>
+                    <path fill="#FFF" d="M15 6.007L13.993 5 10 8.993 6.007 5 5 6.007 8.993 10 5 13.993 6.007 15 10 11.007 13.993 15 15 13.993 11.007 10z"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <span class="vedio-title text-center">Shankar Profile.mp4</span> </div>
+          <div class="text-center">
+            <label class="add-video">
+              <input type="file" value="Add Video">
+              <button type="file" class="btn btn-secondary">Add Video</button>
+            </label>
+          </div>
+          <div class="sub-title mrg-top-20">Tech Assessment <span>(Optional)</span></div>
+          <div class="tech-assessment">
+            <ul>
+              <li>Oracle SQL <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13">
+                  <path fill="#4A4A4A" fill-rule="evenodd" d="M1.33 12.302L0 10.942l4.685-4.806L0 1.36 1.33 0l4.685 4.806L10.67 0 12 1.36 7.315 6.136 12 10.942l-1.33 1.36-4.655-4.836z"/>
+                </svg>
+                </a> </li>
+              <li>Java Advanced <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13">
+                  <path fill="#4A4A4A" fill-rule="evenodd" d="M1.33 12.302L0 10.942l4.685-4.806L0 1.36 1.33 0l4.685 4.806L10.67 0 12 1.36 7.315 6.136 12 10.942l-1.33 1.36-4.655-4.836z"/>
+                </svg>
+                </a> </li>
+            </ul>
+            <div class="text-center">
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#Modalassesment">Add Tech Assessment</button>
+            </div>
+            <div id="Modalassesment" class="modal fade assesmentmodal" role="dialog">
+              <div class="modal-dialog"> 
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center">Select Assesments</h4>
+                    <a data-dismiss="modal" href="#" class="pull-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13">
+                      <path fill="#4A4A4A" fill-rule="evenodd" d="M1.33 12.302L0 10.942l4.685-4.806L0 1.36 1.33 0l4.685 4.806L10.67 0 12 1.36 7.315 6.136 12 10.942l-1.33 1.36-4.655-4.836z"/>
+                    </svg>
+                    </a> </div>
+                  <div class="modal-body text-center">
+                    <div id="accordion" >
+                      <div class="panel panel-default">
+                        <div class="panel-heading" id="headingOne">
+                          <h4 class="panel-title"> <a role="button" data-toggle="collapse"  href="#collapseOne" > Suggested Assesments </a> </h4>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                          <div class="panel-body candidatesrc">
+                            <div class="assesmentcard">
+                              <h4>
+                                <label>
+                                  <input type="checkbox" class="filled-in" />
+                                  <span>&nbsp;</span> </label>
+                                <span class="ttl">SQL Basics <span>15 Questions | 60 mins</span></span></h4>
+                              <p>this test consists of 15 multiple choice questions. This assessment tests candidate on core SQL, PL SQL with questions ranging from basic to intermediate difficulty levels</p>
+                            </div>
+                            <div class="assesmentcard">
+                              <h4>
+                                <label>
+                                  <input type="checkbox" class="filled-in" />
+                                  <span>&nbsp;</span> </label>
+                                <span class="ttl">SQL Basics <span>15 Questions | 60 mins</span></span></h4>
+                              <p>this test consists of 15 multiple choice questions. This assessment tests candidate on core SQL, PL SQL with questions ranging from basic to intermediate difficulty levels</p>
+                            </div>
+                            <div class="assesmentcard">
+                              <h4>
+                                <label>
+                                  <input type="checkbox" class="filled-in" />
+                                  <span>&nbsp;</span> </label>
+                                <span class="ttl">SQL Basics <span>15 Questions | 60 mins</span></span></h4>
+                              <p>this test consists of 15 multiple choice questions. This assessment tests candidate on core SQL, PL SQL with questions ranging from basic to intermediate difficulty levels</p>
+                            </div>
+                          </div>
+                          <div class="helptxt">* Select Up to 2 assessments</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" id="headingTwo">
+                          <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"  href="#collapseTwo" > Select Other Assements </a> </h4>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion" >
+                          <div class="input-field location">
+                            <input id="AssessmentName" type="text" class="validate">
+                            <label for="AssessmentName">Assessment Name</label>
+                            <i class="fal fa-search "></i> </div>
+                          <div class="candidatesrc">
+                            <div id="accordion2" >
+                              <div class="panel panel-default">
+                                <div id="collapseOne1" class="collapse show" data-parent="#accordion2">
+                                  <div class="panel-body candidatesrc">
+                                    <div class="assesmentcard">
+                                      <h4>
+                                        <label>
+                                          <input type="checkbox" class="filled-in" />
+                                          <span>&nbsp;</span> </label>
+                                        <span class="ttl">SQL Basics <span>15 Questions | 60 mins</span></span></h4>
+                                      <p>this test consists of 15 multiple choice questions. This assessment tests candidate on core SQL, PL SQL with questions ranging from basic to intermediate difficulty levels</p>
+                                    </div>
+                                    <div class="assesmentcard">
+                                      <h4>
+                                        <label>
+                                          <input type="checkbox" class="filled-in" />
+                                          <span>&nbsp;</span> </label>
+                                        <span class="ttl">SQL Basics <span>15 Questions | 60 mins</span></span></h4>
+                                      <p>this test consists of 15 multiple choice questions. This assessment tests candidate on core SQL, PL SQL with questions ranging from basic to intermediate difficulty levels</p>
+                                    </div>
+                                    <div class="assesmentcard">
+                                      <h4>
+                                        <label>
+                                          <input type="checkbox" class="filled-in" />
+                                          <span>&nbsp;</span> </label>
+                                        <span class="ttl">SQL Basics <span>15 Questions | 60 mins</span></span></h4>
+                                      <p>this test consists of 15 multiple choice questions. This assessment tests candidate on core SQL, PL SQL with questions ranging from basic to intermediate difficulty levels</p>
+                                    </div>
+                                    <div class="assesmentcard">
+                                      <h4>
+                                        <label>
+                                          <input type="checkbox" class="filled-in" />
+                                          <span>&nbsp;</span> </label>
+                                        <span class="ttl">SQL Basics <span>15 Questions | 60 mins</span></span></h4>
+                                      <p>this test consists of 15 multiple choice questions. This assessment tests candidate on core SQL, PL SQL with questions ranging from basic to intermediate difficulty levels</p>
+                                    </div>
+                                    <div class="assesmentcard">
+                                      <h4>
+                                        <label>
+                                          <input type="checkbox" class="filled-in" />
+                                          <span>&nbsp;</span> </label>
+                                        <span class="ttl">SQL Basics <span>15 Questions | 60 mins</span></span></h4>
+                                      <p>this test consists of 15 multiple choice questions. This assessment tests candidate on core SQL, PL SQL with questions ranging from basic to intermediate difficulty levels</p>
+                                    </div>
+                                    <div class="assesmentcard">
+                                      <h4>
+                                        <label>
+                                          <input type="checkbox" class="filled-in" />
+                                          <span>&nbsp;</span> </label>
+                                        <span class="ttl">SQL Basics <span>15 Questions | 60 mins</span></span></h4>
+                                      <p>this test consists of 15 multiple choice questions. This assessment tests candidate on core SQL, PL SQL with questions ranging from basic to intermediate difficulty levels</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--
+										  <div class="panel panel-default">
+											<div class="panel-heading" id="headingTwo">
+											  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"  href="#collapseTwo1" > Calendar </a> </h4>
+											</div>
+											<div id="collapseTwo1" class="collapse" data-parent="#accordion2" >
+											  <div class="panel-body candidatesrc">
+												<div class="assesmentcard">
+												  <h4>
+													<label>
+													  <input type="checkbox" class="filled-in" />
+													  <span>&nbsp;</span> </label>
+													<span class="ttl">SQL Basics <span>15 Questions | 60 mins</span></span></h4>
+												  <p>this test consists of 15 multiple choice questions. This assessment tests candidate on core SQL, PL SQL with questions ranging from basic to intermediate difficulty levels</p>
+												</div>
+												<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"></div>
+											  </div>
+											</div>
+										  </div>
+			--> 
+                            </div>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" data-dismiss="modal" class="btn btn-close btn-default">Done</a> </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center create-requisition-btn">
+              <button type="button" class="btn btn-default btn-lg" style="height: auto;">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script> 
+<!--<script src="js/accordion.js"></script>--> 
+<script src="js/all.js"></script> 
+
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>--> 
+<script src="js/custom.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script>
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+		
+	
+        $('.leave-msg-trigger').click(function () {
+            $("#leave-msg-wrap").toggleClass('open');
+			$(".poscount").toggleClass('visible');
+        });
+		
+	
+	$(document).ready(function() {
+    document.getElementById('pro-image').addEventListener('change', readImage, false);
+    
+    $( ".preview-images-zone" ).sortable();
+    
+    $(document).on('click', '.image-cancel', function() {
+        let no = $(this).data('no');
+        $(".preview-image.preview-show-"+no).remove();
+    });
+});
+
+
+
+var num = 4;
+function readImage() {
+    if (window.File && window.FileList && window.FileReader) {
+        var files = event.target.files; //FileList object
+        var output = $(".preview-images-zone");
+
+        for (let i = 0; i < files.length; i++) {
+            var file = files[i];
+            if (!file.type.match('image')) continue;
+            
+            var picReader = new FileReader();
+            
+            picReader.addEventListener('load', function (event) {
+                var picFile = event.target;
+                var html =  '<div class="preview-image preview-show-' + num + '">' +
+                            '<div class="image-cancel" data-no="' + num + '">x</div>' +
+                            '<div class="image-zone"><img id="pro-img-' + num + '" src="' + picFile.result + '"></div>' +
+                            '<div class="tools-edit-image"><a href="javascript:void(0)" data-no="' + num + '" class="btn btn-light btn-edit-image">edit</a></div>' +
+                            '</div>';
+
+                output.append(html);
+                num = num + 1;
+            });
+
+            picReader.readAsDataURL(file);
+        }
+        $("#pro-image").val('');
+    } else {
+        console.log('Browser not support');
+    }
+}
+	
+	
+	function createNoty(message, type) {
+    var html = '<div class="alert alert-' + type + ' alert-dismissable page-alert">';    
+    html += '<button type="button" class="close"><span class="fal fa-times"> </span><span class="sr-only">Close</span></button>';
+    html += message;
+    html += '</div>';    
+    $(html).hide().prependTo('#noty-holder').slideDown();
+};
+
+$(function(){
+    createNoty('Hi! This is my message', 'info');
+    
+    $('.page-alert .close').click(function(e) {
+        e.preventDefault();
+        $(this).closest('.page-alert').slideUp();
+		
+    });
+});
+
+ 
+
+    </script>
+<script type="text/javascript" src="js/jquery.datetimepicker.js"></script> 
+<script type="text/javascript">
+        $(document).ready(function(){
+          
+            $('#demo2').datetimepicker({
+                date: new Date(),
+                viewMode: 'YMD',
+                onDateChange: function(){
+                    $('#date-text2').text(this.getText());
+                    $('#date-text-ymd2').text(this.getText('YYYY-MM-DD'));
+                    $('#date-value2').text(this.getValue());
+                }
+            });
+           
+        });
+    </script>
+<script>
+	/* When the user clicks on the button,
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	function filterFunction() {
+	  var input, filter, ul, li, a, i;
+	  input = document.getElementById("myInput");
+	  filter = input.value.toUpperCase();
+	  div = document.getElementById("myDropdown");
+	  a = div.getElementsByTagName("a");
+	  for (i = 0; i < a.length; i++) {
+		txtValue = a[i].textContent || a[i].innerText;
+		if (txtValue.toUpperCase().indexOf(filter) > -1) {
+		  a[i].style.display = "";
+		} else {
+		  a[i].style.display = "none";
+		}
+	  }
+	}
+		
+		$(function() {
+	$('#form-tags-skill').tagsInput();
+ 
+});
+		
+		/* jQuery Tags Input Revisited Plugin
+ *
+ * Copyright (c) Krzysztof Rusnarczyk
+ * Licensed under the MIT license */
+
+(function($) {
+	var delimiter = [];
+	var inputSettings = [];
+	var callbacks = [];
+
+	$.fn.addTag = function(value, options) {
+		options = jQuery.extend({
+			focus: false,
+			callback: true
+		}, options);
+		
+		this.each(function() {
+			var id = $(this).attr('id');
+
+			var tagslist = $(this).val().split(_getDelimiter(delimiter[id]));
+			if (tagslist[0] === '') tagslist = [];
+
+			value = jQuery.trim(value);
+			
+			if ((inputSettings[id].unique && $(this).tagExist(value)) || !_validateTag(value, inputSettings[id], tagslist, delimiter[id])) {
+				$('#' + id + '_tag').addClass('error');
+				return false;
+			}
+			
+			$('<span>', {class: 'tag'}).append(
+				$('<span>', {class: 'tag-text'}).text(value),
+				$('<button>', {class: 'tag-remove'}).click(function() {
+					return $('#' + id).removeTag(encodeURI(value));
+				})
+			).insertBefore('#' + id + '_addTag');
+
+			tagslist.push(value);
+
+			$('#' + id + '_tag').val('');
+			if (options.focus) {
+				$('#' + id + '_tag').focus();
+			} else {
+				$('#' + id + '_tag').blur();
+			}
+
+			$.fn.tagsInput.updateTagsField(this, tagslist);
+
+			if (options.callback && callbacks[id] && callbacks[id]['onAddTag']) {
+				var f = callbacks[id]['onAddTag'];
+				f.call(this, this, value);
+			}
+			
+			if (callbacks[id] && callbacks[id]['onChange']) {
+				var i = tagslist.length;
+				var f = callbacks[id]['onChange'];
+				f.call(this, this, value);
+			}
+		});
+
+		return false;
+	};
+
+	$.fn.removeTag = function(value) {
+		value = decodeURI(value);
+		
+		this.each(function() {
+			var id = $(this).attr('id');
+
+			var old = $(this).val().split(_getDelimiter(delimiter[id]));
+
+			$('#' + id + '_tagsinput .tag').remove();
+			
+			var str = '';
+			for (i = 0; i < old.length; ++i) {
+				if (old[i] != value) {
+					str = str + _getDelimiter(delimiter[id]) + old[i];
+				}
+			}
+
+			$.fn.tagsInput.importTags(this, str);
+
+			if (callbacks[id] && callbacks[id]['onRemoveTag']) {
+				var f = callbacks[id]['onRemoveTag'];
+				f.call(this, this, value);
+			}
+		});
+
+		return false;
+	};
+
+	$.fn.tagExist = function(val) {
+		var id = $(this).attr('id');
+		var tagslist = $(this).val().split(_getDelimiter(delimiter[id]));
+		return (jQuery.inArray(val, tagslist) >= 0);
+	};
+
+	$.fn.importTags = function(str) {
+		var id = $(this).attr('id');
+		$('#' + id + '_tagsinput .tag').remove();
+		$.fn.tagsInput.importTags(this, str);
+	};
+
+	$.fn.tagsInput = function(options) {
+		var settings = jQuery.extend({
+			interactive: true,
+			placeholder: 'Add a Skill',
+			minChars: 0,
+			maxChars: null,
+			limit: null,
+			validationPattern: null,
+			width: 'auto',
+			height: 'auto',
+			autocomplete: null,
+			hide: true,
+			delimiter: ',',
+			unique: true,
+			removeWithBackspace: true
+		}, options);
+
+		var uniqueIdCounter = 0;
+
+		this.each(function() {
+			if (typeof $(this).data('tagsinput-init') !== 'undefined') return;
+
+			$(this).data('tagsinput-init', true);
+
+			if (settings.hide) $(this).hide();
+			
+			var id = $(this).attr('id');
+			if (!id || _getDelimiter(delimiter[$(this).attr('id')])) {
+				id = $(this).attr('id', 'tags' + new Date().getTime() + (++uniqueIdCounter)).attr('id');
+			}
+
+			var data = jQuery.extend({
+				pid: id,
+				real_input: '#' + id,
+				holder: '#' + id + '_tagsinput',
+				input_wrapper: '#' + id + '_addTag',
+				fake_input: '#' + id + '_tag'
+			}, settings);
+
+			delimiter[id] = data.delimiter;
+			inputSettings[id] = {
+				minChars: settings.minChars,
+				maxChars: settings.maxChars,
+				limit: settings.limit,
+				validationPattern: settings.validationPattern,
+				unique: settings.unique
+			};
+
+			if (settings.onAddTag || settings.onRemoveTag || settings.onChange) {
+				callbacks[id] = [];
+				callbacks[id]['onAddTag'] = settings.onAddTag;
+				callbacks[id]['onRemoveTag'] = settings.onRemoveTag;
+				callbacks[id]['onChange'] = settings.onChange;
+			}
+
+			var markup = $('<div>', {id: id + '_tagsinput', class: 'tagsinput'}).append(
+				$('<div>', {id: id + '_addTag'}).append(
+					settings.interactive ? $('<input>', {id: id + '_tag', class: 'tag-input', value: '', placeholder: settings.placeholder}) : null
+				)
+			);
+
+			$(markup).insertAfter(this);
+
+			$(data.holder).css('width', settings.width);
+			$(data.holder).css('min-height', settings.height);
+			$(data.holder).css('height', settings.height);
+
+			if ($(data.real_input).val() !== '') {
+				$.fn.tagsInput.importTags($(data.real_input), $(data.real_input).val());
+			}
+			
+			// Stop here if interactive option is not chosen
+			if (!settings.interactive) return;
+			
+			$(data.fake_input).val('');
+			$(data.fake_input).data('pasted', false);
+			
+			$(data.fake_input).on('focus', data, function(event) {
+				$(data.holder).addClass('focus');
+				
+				if ($(this).val() === '') {
+					$(this).removeClass('error');
+				}
+			});
+			
+			$(data.fake_input).on('blur', data, function(event) {
+				$(data.holder).removeClass('focus');
+			});
+
+			if (settings.autocomplete !== null && jQuery.ui.autocomplete !== undefined) {
+				$(data.fake_input).autocomplete(settings.autocomplete);
+				$(data.fake_input).on('autocompleteselect', data, function(event, ui) {
+					$(event.data.real_input).addTag(ui.item.value, {
+						focus: true,
+						unique: settings.unique
+					});
+					
+					return false;
+				});
+				
+				$(data.fake_input).on('keypress', data, function(event) {
+					if (_checkDelimiter(event)) {
+						$(this).autocomplete("close");
+					}
+				});
+			} else {
+				$(data.fake_input).on('blur', data, function(event) {
+					$(event.data.real_input).addTag($(event.data.fake_input).val(), {
+						focus: true,
+						unique: settings.unique
+					});
+					
+					return false;
+				});
+			}
+			
+			// If a user types a delimiter create a new tag
+			$(data.fake_input).on('keypress', data, function(event) {
+				if (_checkDelimiter(event)) {
+					event.preventDefault();
+					
+					$(event.data.real_input).addTag($(event.data.fake_input).val(), {
+						focus: true,
+						unique: settings.unique
+					});
+					
+					return false;
+				}
+			});
+			
+			$(data.fake_input).on('paste', function () {
+				$(this).data('pasted', true);
+			});
+			
+			// If a user pastes the text check if it shouldn't be splitted into tags
+			$(data.fake_input).on('input', data, function(event) {
+				if (!$(this).data('pasted')) return;
+				
+				$(this).data('pasted', false);
+				
+				var value = $(event.data.fake_input).val();
+				
+				value = value.replace(/\n/g, '');
+				value = value.replace(/\s/g, '');
+				
+				var tags = _splitIntoTags(event.data.delimiter, value);
+				
+				if (tags.length > 1) {
+					for (var i = 0; i < tags.length; ++i) {
+						$(event.data.real_input).addTag(tags[i], {
+							focus: true,
+							unique: settings.unique
+						});
+					}
+					
+					return false;
+				}
+			});
+			
+			// Deletes last tag on backspace
+			data.removeWithBackspace && $(data.fake_input).on('keydown', function(event) {
+				if (event.keyCode == 8 && $(this).val() === '') {
+					 event.preventDefault();
+					 var lastTag = $(this).closest('.tagsinput').find('.tag:last > span').text();
+					 var id = $(this).attr('id').replace(/_tag$/, '');
+					 $('#' + id).removeTag(encodeURI(lastTag));
+					 $(this).trigger('focus');
+				}
+			});
+
+			// Removes the error class when user changes the value of the fake input
+			$(data.fake_input).keydown(function(event) {
+				// enter, alt, shift, esc, ctrl and arrows keys are ignored
+				if (jQuery.inArray(event.keyCode, [13, 37, 38, 39, 40, 27, 16, 17, 18, 225]) === -1) {
+					$(this).removeClass('error');
+				}
+			});
+		});
+
+		return this;
+	};
+	
+	$.fn.tagsInput.updateTagsField = function(obj, tagslist) {
+		var id = $(obj).attr('id');
+		$(obj).val(tagslist.join(_getDelimiter(delimiter[id])));
+	};
+
+	$.fn.tagsInput.importTags = function(obj, val) {
+		$(obj).val('');
+		
+		var id = $(obj).attr('id');
+		var tags = _splitIntoTags(delimiter[id], val); 
+		
+		for (i = 0; i < tags.length; ++i) {
+			$(obj).addTag(tags[i], {
+				focus: false,
+				callback: false
+			});
+		}
+		
+		if (callbacks[id] && callbacks[id]['onChange']) {
+			var f = callbacks[id]['onChange'];
+			f.call(obj, obj, tags);
+		}
+	};
+	
+	var _getDelimiter = function(delimiter) {
+		if (typeof delimiter === 'undefined') {
+			return delimiter;
+		} else if (typeof delimiter === 'string') {
+			return delimiter;
+		} else {
+			return delimiter[0];
+		}
+	};
+	
+	var _validateTag = function(value, inputSettings, tagslist, delimiter) {
+		var result = true;
+		
+		if (value === '') result = false;
+		if (value.length < inputSettings.minChars) result = false;
+		if (inputSettings.maxChars !== null && value.length > inputSettings.maxChars) result = false;
+		if (inputSettings.limit !== null && tagslist.length >= inputSettings.limit) result = false;
+		if (inputSettings.validationPattern !== null && !inputSettings.validationPattern.test(value)) result = false;
+		
+		if (typeof delimiter === 'string') {
+			if (value.indexOf(delimiter) > -1) result = false;
+		} else {
+			$.each(delimiter, function(index, _delimiter) {
+				if (value.indexOf(_delimiter) > -1) result = false;
+				return false;
+			});
+		}
+		
+		return result;
+	};
+ 
+	var _checkDelimiter = function(event) {
+		var found = false;
+		
+		if (event.which === 13) {
+			return true;
+		}
+
+		if (typeof event.data.delimiter === 'string') {
+			if (event.which === event.data.delimiter.charCodeAt(0)) {
+				found = true;
+			}
+		} else {
+			$.each(event.data.delimiter, function(index, delimiter) {
+				if (event.which === delimiter.charCodeAt(0)) {
+					found = true;
+				}
+			});
+		}
+		
+		return found;
+	 };
+	 
+	 var _splitIntoTags = function(delimiter, value) {
+		 if (value === '') return [];
+		 
+		 if (typeof delimiter === 'string') {
+			 return value.split(delimiter);
+		 } else {
+			 var tmpDelimiter = '∞';
+			 var text = value;
+			 
+			 $.each(delimiter, function(index, _delimiter) {
+				 text = text.split(_delimiter).join(tmpDelimiter);
+			 });
+			 
+			 return text.split(tmpDelimiter);
+		 }
+		 
+		 return [];
+	 };
+})(jQuery);
+
+	  document.addEventListener('DOMContentLoaded', function() {
+		var elems = document.querySelectorAll('.datepicker');
+		var instances = M.Datepicker.init(elems, options);
+	  });
+
+	  // Or with jQuery
+
+	  $(document).ready(function(){
+		$('.datepicker').datepicker();
+	  });
+		
+</script>
+</body>
+</html>
