@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>noun_Calendar_2241835_000000</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dashboard--calender--List-View" transform="translate(-298.000000, -337.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(40.000000, 329.000000)">
+                <g id="noun_Calendar_2241835_000000" transform="translate(258.000000, 8.000000)">
+                    <path d="M0,4.8 L0,13.3333333 C0,14.8053333 1.19466667,16 2.66666667,16 L3.73333333,16 L3.73333333,14.9333333 L3.73333333,4.8 L1.06666667,4.8 L0,4.8 Z" id="Path"></path>
+                    <path d="M13.3333333,0 L2.66666667,0 C1.19466667,0 0,1.19466667 0,2.66666667 L0,3.73333333 L1.06666667,3.73333333 L3.73333333,3.73333333 L4.8,3.73333333 L14.9333333,3.73333333 L16,3.73333333 L16,2.66666667 C16,1.19466667 14.8053333,0 13.3333333,0 Z" id="Path"></path>
+                    <path d="M4.8,12.2666667 L4.8,14.9333333 L4.8,16 L13.3333333,16 C14.8053333,16 16,14.8053333 16,13.3333333 L16,12.2666667 L14.9333333,12.2666667 L4.8,12.2666667 Z" id="Path"></path>
+                    <polygon id="Path" points="4.8 8.53333333 4.8 11.2 14.9333333 11.2 16 11.2 16 8.53333333 14.9333333 8.53333333"></polygon>
+                    <polygon id="Path" points="4.8 4.8 4.8 7.46666667 14.9333333 7.46666667 16 7.46666667 16 4.8 14.9333333 4.8"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

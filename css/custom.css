@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Source+Sans+Pro:200,300,400,600,700');
+body{}
+header{padding: 30px;  background-color: #ffffff; border-bottom: 1px solid #f7f3f0;border-top: 1px solid #bbb5b9; border-right: 1px solid #bbb5b9; border-left: 1px solid #bbb5b9; }
+.Smart-Profile {font-family: 'Source Sans Pro', sans-serif; font-size: 26px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 0.76; letter-spacing: 0.8px; color: #f9683d;}
+.Smart-Profile .text-style-1 {color: #4855b5;}
+.Smart-Hiring-Just-a {font-family: 'Source Sans Pro', sans-serif; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: 0px; text-align: right;
+  color: #4855b5;
+}
+.profile-details tr td:first-child{padding-right: 0px;}
+.profile-details tr td:last-child{vertical-align: top;}
+.contact-details{background-color: #ffffff; padding: 25px 15px 0px 15px; border-right: 1px solid #bbb5b9;}
+.profile-pic{width: 150px; height: 150px; margin: 0px auto; box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.16); display: block; background-color: #d8d8d8; border-radius: 100%; overflow: hidden; border: 4px solid #fff;}
+.profile-name{ display: block; padding-bottom: 10px; font-size: 24px; line-height: 20px; vertical-align: top; font-weight: 500; font-style: normal; font-stretch: normal; letter-spacing: 0.6px; color: #000000;}
+.designation{ font-size: 14px; font-weight: 300; font-style: normal; vertical-align: top; font-stretch: normal; line-height: 12px; letter-spacing: normal; color: #f9683d; margin: 0px; padding:0px;}
+.experience{ font-size: 14px; font-weight: 300; font-style: normal; vertical-align: top; font-stretch: normal; line-height: 12px; letter-spacing: normal; color: #f9683d; margin: 0px 0px 0px 7px; padding:0px 0px 0px 7px; border-left:1px solid #ccc;}
+/*.active{ margin-top:10px; display: block; font-size: 14px; font-weight: 500; font-style: normal; vertical-align: top; font-stretch: normal; line-height: 10px; letter-spacing: normal; color: #000000;}*/
+.active i{height: 10px; width: 10px; border-radius: 100%; background-color:#5bc43c; display: inline-block; margin-right: 5px;}
+.social-icon{margin-top:10px; display: block;}
+.social-icon a{color: #f9683d; font-size: 16px; margin-right:12px;}
+
+.btn a{
+	border-radius: 25px;
+    background-color: #4855b5;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    display: block;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+
+.share{
+	width: 38px;
+    cursor: pointer;
+    height: 38px;
+    font-size: 15px;
+    background-color: #4855b5;
+    border-radius: 100%;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+body.modal-open .modal-filter{
+	-webkit-filter: blur(10px) !important; /* Safari 6.0 - 9.0 */
+	filter: blur(10px) !important
+}
+
+.contact-info ul{border-left: 1px solid #f7f3f0; padding-top: 10px; padding-bottom: 10px; padding-left: 0px;}
+.contact-info li{ list-style: none; padding-bottom:10px; padding-left:35px; font-size: 16px; font-weight: 300; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000;}
+.contact-info li a{text-decoration: none; color: #000;}
+.contact-info li svg{margin-right: 10px;}
+.cnt-bg{background: url("../images/bg.jpg") repeat left top; border-right: 1px solid #bbb5b9; background-size:11px; border-left: 1px solid #c5ccff; padding-bottom: 0px;}
+.cnt-area{padding: 30px 0; padding-bottom: 0;}
+h2{ font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #f9683d;}
+.cnt-box{border-radius: 4px; box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1); background-color: #ffffff; width: 100%; padding: 18px; font-size: 14px; margin-bottom: 25px; font-weight: 300; font-style: normal; font-stretch: normal;line-height: 1.6; letter-spacing: normal; color: #000000; }
+.tech-assessment tr td:first-child{font-size: 14px; font-weight: 300; padding-bottom:5px; font-style: normal; font-stretch: normal; line-height: 1; letter-spacing: normal; width: 80%; color: #000000;}
+.tech-assessment tr td:last-child{padding-bottom:5px; text-align: right;}
+.orange-color{color: #ffa246;}
+.green-color{color: #00c90c;}
+.badge{font-size: 11px; font-weight: 500; border-radius: 15px; padding: 5px 10px; margin: 0px 6px 6px 0px; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; color: #ffffff;}
+.badge-primary{background-color: #4855b5;}
+.certi-icon{padding: 0px; margin:0px 0px 0px 0px; display: block;}
+.certi-icon li{list-style: none; display: inline-block; margin-right: 20px; text-align: center;}
+.certi-icon li:last-child{margin-right: 0;}
+.certi-icon li img {max-width:50px;}
+.high-edu td{ font-size: 14px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.64; letter-spacing: normal; color: #000000;}
+.high-edu td .edu-clg{font-size: 14px; font-weight: normal; display: block;}
+.high-edu td .edu-location{font-style: italic; color: #f9683d; font-weight: normal; display: block;}
+.high-edu td.edu-year{font-size: 14px; font-weight: normal; font-style: italic; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #808080; vertical-align: top;}
+.video-box{margin-bottom: 25px;}
+.skill-list{margin-bottom: 25px;}
+footer{background: url("../images/footer-bg.png") left top repeat; background-size: 20px; padding: 15px; border-right: 1px solid #bbb5b9; border-left: 1px solid #bbb5b9; border-bottom: 1px solid #bbb5b9}
+.click{font-family: 'Source Sans Pro', sans-serif; color: #4855b5; font-size: 20px; font-weight: bold; padding-left: 5px; vertical-align: middle;}
+.source {font-family: 'Source Sans Pro', sans-serif;  color: #f9683d; font-size: 20px; font-weight: bold; vertical-align: middle;}
+.foot-mail a{float: right; font-size: 14px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #4855b5; margin-top:10px;}
+.modal-title{font-size: 14px; font-weight: 500; margin-bottom: 25px;  font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000;}
+.modal .form-control{border-radius: 4px; background-color: #fafaff; margin-bottom: 10px; display: block;}
+.modal .btn{border-radius:5px; background-color: #4855b5; font-size: 14px; padding:7px 15px; margin-top: 10px; display: block; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #ffffff;}
+.modal .btn:hover{color: #fff; background-color:#4855b5de;}
+.modal .modal-body button{float: right;}
+
+.container{
+	max-width: 1170px!important;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc; font-size:12px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc; font-size:12px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc; font-size:12px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ccc; font-size:12px;
+}
+.modal .close{position: absolute; right: -25px; opacity: 1; top: -25px; color: #fff; height: 30px; width: 30px; border-radius: 100%; border: 2px solid #fff; font-weight: normal;}
+#video .modal-body{padding: 0px;}
+.visible-xs{display: none;}
+@media (min-width: 768px){
+	.visible-md{display: block;}
+}
+@media (min-width: 576px){
+.modal-dialog {
+    max-width:450px;
+    margin: 15% auto;
+}		
+}
+@media (max-width: 576px){
+	.Smart-Profile, .Smart-Hiring-Just-a{text-align: center!important;}
+	.Smart-Hiring-Just-a{padding-top: 10px;}
+}
+@media (min-width:320px)and (max-width:768px)
+{
+	.visible-md{display: none;}
+	.cnt-area{padding-bottom: 30px;}
+	.visible-xs{display: block;}
+	.container{max-width: 1170px!important;}
+	.contact-info{margin-top: 20px;}
+	footer{text-align: center;}
+	.foot-mail a{float: none; margin-top: 10px; display: block;}
+}
+
+
+
+
+
+
+
+
+
+
+
+

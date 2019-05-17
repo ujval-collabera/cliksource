@@ -1,0 +1,222 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {  
+	ul.reqcont {display: block; }
+	ul.reqcont li { display: inline-block;
+    border-right: none;
+    border-top: 1px solid #efefef;
+    width: 49%;}
+	ul.reqcont li:first-child, ul.reqcont li:nth-child(2) {border-top:none;}
+	ul.reqcont li:nth-child(even) {border-left: 1px solid #efefef;}
+	.chiller_cb{display: inline;}
+	.navbar-nav { display: table; margin: 15px auto 0px;}
+	.navbar-nav li { display: table-cell; padding: 10px;}
+	.navbar { padding:10px 0px;}
+	.navbar-brand {
+    width: 42%;
+    order: 1;
+    text-align: center;
+    padding: 0px;
+    position: absolute;
+    top: 15%;
+/*    left: 25%;*/
+}
+	.navbar-toggler-right { top: 19%;}
+	.rgtmenu .dropdown-menu { left: -100%;}
+	.dropdown-menu:after { right: 68%;}
+	.user-menu .dropdown-menu { left:-220%}
+	.user-menu .dropdown-menu:after {right: 28%;}
+	#noty-holder { width: 80%;}
+	.searchbar {
+	width: 61%;
+}
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) {
+	.sidebar{ min-height: auto; margin-bottom: 30px;}
+ 	.reqblock { max-height: 100%;}
+	.btncollapse { display: block!important;}
+	.collapse.dont-collapse-sm.show {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+	.collapse.dont-collapse-sm {display: none;}
+	.searchflex.pull-right { float: none!important;}
+	.main-wraper .col-lg-4{
+		max-width: 100%!important;
+	}
+	.main-wraper .col-lg-8{
+		max-width: 100%!important;
+		flex: unset;
+	}
+	
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+	.collapse.dont-collapse-sm.show {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+	.collapse.dont-collapse-sm { display: none;}
+	.dashboardblock { margin-top: 20px;}
+	#quickaction h3 { display: none!important;}
+	.reqtop .expblock { display: inline-block; border-right: none; }
+	#noty-holder { top: 6%;}
+	.sidebar { min-height: 480px;}
+	fieldset a { width: 16%;}
+	.searchbar {
+	width: 55%;
+}
+	#timeline h3, #quickaction .eventdetailsblock h3 { display: block!important;}
+	fieldset.form-group.desk { display: none;}
+fieldset.form-group.ipad { display: block;}
+
+}
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+
+	
+	fieldset a { width: 44%; text-align: center;}
+	.fontsty h4 { font-size: 12px;}
+	.inforide, .ride { height: 90px; }
+	.fontsty h2 { top: -5%;}
+	.capblock { display: inline-block; float: right;}
+	.capblock + span { display: none;}
+	fieldset.form-group.desk { display: none;}
+fieldset.form-group.ipad { display: block;}
+	fieldset.form-group.ipad span { display: none;}
+	.btndesk { display: none;}
+	.ipadbtn { display: block;}
+	 
+
+	
+	
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+	.reqtop .alertblock{left: 50%!important;}
+	.tab-content{max-height: initial;}
+	 .collapse.dont-collapse-sm { display: none;}
+	.collapse.dont-collapse-sm.show {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+	.dashboardblock { margin-top: 20px;}
+	.sidebar { min-height: auto;}
+	
+	.sidebar h3 { display: none;}
+	.login-container img { width: 90%;}
+	.login-form br { display: none;}
+	.login-form { width: 90%;}
+	.chiller_cb label { font-size: 14px;}
+	.forget-password a { font-size: 14px;}
+	.btn.btn-lg, .btn-group-lg .btn { padding: 10px;}
+ 
+}
+
+/* iPad Portrate View */
+@media (max-width:1024px){
+	.main-wraper .col-lg-4{
+		max-width: 30%;
+	}
+	.main-wraper .col-lg-8{
+		max-width: 70%;
+		flex: unset;
+	}
+	.fontsty h2{height: 40px; width: 40px; line-height: 40px; font-size: 14px;}
+	
+	.login-form{width: 90%;}
+	.padding0 { padding: 0px!important;}
+	hr { margin: 15px -15px 5px!important;}
+	.reqtop .expblock { display: inline-block; border-right: none; }
+		fieldset.form-group { max-width: 100%; }
+	fieldset.form-group + .search { margin: 15px 0px; float: left;}
+	
+	fieldset a+span { width: 50%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 11px;}
+	.sidebar .tab-pane { padding: 0px;}
+	.sidebar .pull-right { float: left;}
+	.btn.btn-lg, .btn-group-lg .btn { padding: 15px; font-size: 16px; } 
+	.login-form h3 br { display: none!important;}
+	}
+
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {  
+    .reqtop { display: block;}
+	.reqtop h4 { display: inline-block;}
+	/*.reqtop .expblock { display: inline-block;}*/
+.reqtop .alertblock {
+    position: absolute;
+    margin: 0px 15px;
+    right: -100%;
+    top: 0%;
+}
+	.reqtop .lastupdate { padding-left: 0px;}
+	.leave-msg-wrap { width: auto;}
+	ul.reqcont li span { margin-bottom: 0px;}
+	ul.reqcont li > div { line-height: 20px;}
+	fieldset.form-group { max-width: 100%;}
+	.search { float: left; margin-top: 15px;}
+	
+	
+}
+ 
+ 
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+/* Set width to make card deck cards 100% width */
+@media (max-width: 1280px) { 
+ .inforide img {width: 60%;}
+	
+	.contentab .tab-pane { max-height: 450px;}
+	.dashboardblock { padding-top: 25px;}
+	.perfect-datetimepicker table {  max-width: 250px; }
+	#home2.show { max-height: 370px; overflow-y: auto;}
+	.titleblock .date { width: 22%;}
+	.recentcardblock { max-height: 395px;}
+}
+
+@media screen and (min-width: 1366px)
+{
+	.contentab .tab-pane { max-height: 420px;}
+	#home2.show { max-height: 370px; overflow-y: auto;}
+	.titleblock .date { width: 20.4%;}
+	
+}
+
+@media screen and (min-width: 1920px) { 
+ 
+	.dashboardblock { padding-top: 25px;}
+.inforide, .ride { height: 130px;}
+.fontsty h4 { font-size: 14px;}
+.fontsty h2 {  width: 72px; height: 72px; font-size: 24px; line-height: 72px; top: 8%; }
+	.contentab .tab-pane { max-height: 700px;}
+	.perfect-datetimepicker table {  width: 400px;  max-width: 500px; }
+	.perfect-datetimepicker table td { line-height:45px;  font-size: 18px;}
+	#home2.show { max-height: 670px; overflow-y: auto;}
+	.titleblock .date { width: 14%;}
+	.inforide, .ride {
+    height: 130px;
+}
+	.inforide img { width: 50%;}
+	.sidebar-menu .navbar-nav .nav-link { padding: 15px;}
+	.sidebar-menu .navbar-nav .nav-link img { width: auto;}
+	.recentcardblock { max-height: 680px;}
+	
+}
